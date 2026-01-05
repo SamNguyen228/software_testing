@@ -24,6 +24,8 @@ Thông qua bài tập, em đã nâng cao kỹ năng kiểm thử thị giác, c�
 
 ---
 
-**Sinh viên:** Nguyen Duong Sam - BIT230359  
+**Sinh viên:** Nguyen Duong Sam
+**Mã sinh viên:** BIT230359
+**Lớp:** SOFT5
 **Môn học:** Kiểm thử phần mềm  
 **Công cụ:** https://cantunsee.space/
