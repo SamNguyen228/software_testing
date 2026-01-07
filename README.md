@@ -30,3 +30,29 @@ Thông qua bài tập, sinh viên đã nâng cao kỹ năng kiểm thử thị g
 - **Lớp:** SOFT5  
 - **Môn học:** Kiểm thử phần mềm  
 - **Công cụ sử dụng:** https://cantunsee.space/
+
+# Student Analyzer - Unit Test with JUnit
+
+## Mô tả
+Chương trình phân tích điểm số học sinh và kiểm thử bằng JUnit 5.
+
+## Chức năng
+- Đếm số học sinh đạt loại Giỏi (>= 8.0)
+- Tính điểm trung bình hợp lệ (0–10)
+
+## Công nghệ
+- Java
+- JUnit 5
+- VS Code
+
+## Cách chạy test
+1. Mở project bằng VS Code
+2. Mở file StudentAnalyzerTest.java
+3. Chọn Run Test
+
+### Thông tin sinh viên
+- **Họ và tên:** Nguyen Duong Sam  
+- **Mã sinh viên:** BIT230359  
+- **Lớp:** SOFT5  
+- **Môn học:** Kiểm thử phần mềm  
+- **Công cụ sử dụng:** JUnit5
