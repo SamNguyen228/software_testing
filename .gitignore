@@ -1,0 +1,21 @@
+# Java build
+bin/
+out/
+target/
+
+# Libraries
+lib/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Screenshots (optional)
+*.png
+*.jpg
