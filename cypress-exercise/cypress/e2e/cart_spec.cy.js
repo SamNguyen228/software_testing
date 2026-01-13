@@ -29,4 +29,26 @@ describe("Cart Test", () => {
     // Cart badge should not exist
     cy.get(".shopping_cart_badge").should("not.exist");
   });
+
+  it("Should complete checkout step one successfully", () => {
+    // Add product
+    cy.get(".inventory_item").first().find(".btn_inventory").click();
+
+    // Go to cart
+    cy.get(".shopping_cart_link").click();
+
+    // Checkout
+    cy.get("#checkout").click();
+
+    // Fill checkout info
+    cy.get("#first-name").type("John");
+    cy.get("#last-name").type("Doe");
+    cy.get("#postal-code").type("12345");
+
+    // Continue
+    cy.get("#continue").click();
+
+    // Verify checkout step two
+    cy.url().should("include", "/checkout-step-two.html");
+  });
 });
