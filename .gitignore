@@ -1,21 +1,92 @@
-# Java build
+########################
+# ===== JAVA BUILD =====
+########################
 bin/
 out/
 target/
+build/
+*.class
+*.jar
+*.war
+*.ear
 
-# Libraries
+########################
+# ===== JAVA TOOLS =====
+########################
+.gradle/
+.mvn/
+.mvn/wrapper/maven-wrapper.jar
+
+########################
+# ===== LIBRARIES =====
+########################
 lib/
 
-# VS Code
-.vscode/
+########################
+# ===== NODE / CYPRESS =====
+########################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# OS
+# Cypress downloads & cache
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+########################
+# ===== TEST REPORTS =====
+########################
+coverage/
+test-results/
+surefire-reports/
+failsafe-reports/
+
+########################
+# ===== VS CODE =====
+########################
+.vscode/
+.history/
+
+########################
+# ===== INTELLIJ / ECLIPSE =====
+########################
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+########################
+# ===== OS FILES =====
+########################
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Logs
+########################
+# ===== LOGS =====
+########################
 *.log
 
-# Screenshots (optional)
+########################
+# ===== SCREENSHOTS =====
+########################
 *.png
 *.jpg
+*.jpeg
+
+########################
+# ===== ENV =====
+########################
+.env
+.env.local
+.env.*
+
+########################
+# ===== TEMP FILES =====
+########################
+tmp/
+temp/
+.cache/
