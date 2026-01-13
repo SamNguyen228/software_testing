@@ -18,4 +18,15 @@ describe("Cart Test", () => {
 
     cy.get(".inventory_item_price").first().should("have.text", "$7.99");
   });
+
+  it("Should remove product from the cart", () => {
+    // Add product
+    cy.get(".inventory_item").first().find(".btn_inventory").click();
+
+    // Remove product
+    cy.get(".inventory_item").first().find(".btn_inventory").click();
+
+    // Cart badge should not exist
+    cy.get(".shopping_cart_badge").should("not.exist");
+  });
 });
