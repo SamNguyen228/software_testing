@@ -31,7 +31,7 @@ Kiểm thử thị giác website CantUnsee
 
 ### 2. Công cụ sử dụng
 
-* Website: [https://cantunsee.space/](https://cantunsee.space/)
+Website: [https://cantunsee.space/](https://cantunsee.space/)
 
 ### 3. Mục tiêu
 
@@ -51,8 +51,7 @@ Bài tập nhằm rèn luyện khả năng quan sát, so sánh giao diện ngư�
 * Minh chứng được lưu trữ đầy đủ trong repository.
 
 ### 6. Minh chứng
-
-* Ảnh chụp kết quả cuối cùng:  
+  
   ![Ảnh chụp kết quả cuối cùng](./visual-testing/CantUnsee.png)
 
 ### 7. Kết luận
@@ -158,8 +157,6 @@ Kiểm thử End-to-End website Saucedemo bằng Cypress
 * Hệ thống hoạt động đúng với các luồng nghiệp vụ chính.
 
 ### 6. Minh chứng
-
-* Ảnh chụp màn hình các kết quả chạy Cypress.
 
 **Video E2E Testing – Spec Login**  
 https://github.com/user-attachments/assets/2455ea2b-b4f9-4ab7-80b1-0b62087bf74e
