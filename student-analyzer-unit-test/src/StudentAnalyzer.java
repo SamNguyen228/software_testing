@@ -7,14 +7,13 @@ public class StudentAnalyzer {
         }
 
         int count = 0;
-        for (double score : scores) {
-            if (score >= 0 || score <= 10) {
+        for (Double score : scores) {
+            if (score != null && score >= 0 && score <= 10) {
                 if (score >= 8) {
                     count++;
                 }
             }
         }
-
         return count;
     }
 
@@ -23,21 +22,20 @@ public class StudentAnalyzer {
             return 0;
         }
 
-        double avg = 0;
+        double sum = 0;
         int validCount = 0;
 
         for (Double score : scores) {
-            if (score >= 0 && score <= 10) {
-                avg += score;
+            if (score != null && score >= 0 && score <= 10) {
+                sum += score;
                 validCount++;
-            }
-
-            if (validCount == 0) {
-                return 0;
             }
         }
 
-        return avg / validCount;
-    }
+        if (validCount == 0) {
+            return 0;
+        }
 
+        return sum / validCount;
+    }
 }
