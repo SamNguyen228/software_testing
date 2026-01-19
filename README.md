@@ -64,14 +64,16 @@ Thông qua bài tập này, em đã nâng cao khả năng phát hiện lỗi gia
 
 ### 1. Tên bài tập
 
-* **Student Analyzer – Unit Test với JUnit 5**
+* **Student Analyzer – Unit Test với JUnit 4**
 
 ---
 
 ### 2. Công nghệ sử dụng
 
 * **Ngôn ngữ:** Java
-* **Framework kiểm thử:** JUnit 5
+* **Framework kiểm thử:** JUnit 4
+* **Quản lý dự án:** Maven
+* **Đo lường độ bao phủ (Coverage):** Jacoco
 * **IDE:** Visual Studio Code
 
 ---
@@ -86,7 +88,7 @@ Chương trình tập trung vào:
 
 * Phân tích danh sách điểm số
 * Đảm bảo phép tính chính xác và dữ liệu đầu vào hợp lệ
-* Kiểm tra logic xử lý bằng **JUnit 5**
+* Kiểm tra logic xử lý bằng **JUnit 4**
 
 ---
 
@@ -109,19 +111,22 @@ Chương trình tập trung vào:
 student-analyzer-unit-test
 ├── .vscode/                 # Cấu hình cho Visual Studio Code
 ├── bin/                     # File biên dịch (.class)
-├── lib/                     # Thư viện JUnit
+├── lib/                     # Thư viện JUnit (nếu sử dụng manual)
 ├── src/                     # Mã nguồn chính
-│   ├── App.java
 │   └── StudentAnalyzer.java
+├── target/                  # Thư mục build của Maven (chứa report coverage)
 ├── test/                    # Mã nguồn kiểm thử
 │   └── StudentAnalyzerTest.java
+├── pom.xml                  # Cấu hình Maven project
+├── run_coverage.bat         # Script chạy báo cáo coverage
 ```
 
 **Giải thích:**
 
 * `src/`: Chứa logic chính của chương trình
 * `test/`: Chứa các test case viết bằng JUnit
-* `lib/`: Chứa các file `.jar` của JUnit 5
+* `pom.xml`: File cấu hình các thư viện (JUnit, Jacoco)
+* `target/site/jacoco/index.html`: File báo cáo kết quả độ bao phủ code
 
 ---
 
@@ -133,9 +138,9 @@ student-analyzer-unit-test
 * Chọn **File → Open Folder**
 * Mở thư mục `student-analyzer-unit-test`
 
-#### Bước 2: Kiểm tra thư viện JUnit
+#### Bước 2: Kiểm tra thư viện
 
-* Đảm bảo thư mục `lib/` đã chứa đầy đủ thư viện **JUnit 5 (junit-jupiter)**
+* Dự án sử dụng Maven, các thư viện sẽ được tự động tải về dựa trên file `pom.xml`.
 
 #### Bước 3: Mở file kiểm thử
 
@@ -168,12 +173,28 @@ Kết quả được hiển thị trực tiếp trong **JUnit Test Runner** củ
 
 ---
 
-### 8. Kết luận
+### 8. Báo cáo độ bao phủ mã nguồn (Code Coverage)
+
+Dự án sử dụng **Jacoco** để đo lường độ bao phủ của các bài kiểm thử.
+
+* **Cách chạy báo cáo:**
+  Chạy file script `run_coverage.bat` trong thư mục `student-analyzer-unit-test`.
+
+* **Xem báo cáo:**
+  Mở file `student-analyzer-unit-test/target/site/jacoco/index.html` bằng trình duyệt web.
+
+* **Kết quả bao phủ:**
+  Báo cáo chi tiết về số dòng code, số nhánh (branches) đã được kiểm thử, đảm bảo độ tin cậy của mã nguồn.
+
+  ![Ảnh chụp báo cáo độ bao phủ](./student-analyzer-unit-test/StudentAnalyzer.png)
+---
+
+### 9. Kết luận
 
 * Hiểu được khái niệm và vai trò của **Unit Test**
-* Biết cách sử dụng **JUnit 5** để viết và chạy test case
+* Biết cách sử dụng **JUnit 4** để viết và chạy test case
 * Nâng cao kỹ năng kiểm tra và đảm bảo chất lượng mã nguồn
-* Làm quen với quy trình phát triển phần mềm chuyên nghiệp
+* Làm quen với quy trình phát triển phần mềm chuyên nghiệp với Maven
 
 ---
 
